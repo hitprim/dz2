@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+enum Krestiki {
+	X = 2,
+	O = 1,
+	EMPTY_CELL = 0
+};
+
+int main() {
+	Krestiki nul;
+	short int a;
+	int b, m;
+	long long c;
+	char d;
+	bool e;
+	float f;
+	double g;
+	cin >> b >> m;
+	int** mas = new int* [b];
+	for (int i = 0; i < b; ++i)
+		mas[i] = new int[m];
+	for (int i = 0; i < b; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			cin >> mas[i][j];
+		}
+	}
+}
